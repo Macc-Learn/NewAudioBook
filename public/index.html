@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>LEGENDS OF SHADAWI</title>
+</head>
+<body>
+
+    <!-- Desktop -->
+    <div class="title-block">
+        <!-- LEGENDS OF SHADAWI -->
+        <img src="./images/title-art.png" alt="Legends Of Shadawi (title art)">
+
+        <button onclick="openBook()">ENTER</button>
+
+        <!-- Copyright -->
+        <div class="micro-text">
+            © 2023 Legends of Shadawi by Aaron Davis. All rights reserved.
+        </div>
+    </div>
+
+    <div class="content-block hid">
+
+        <div class="movie-container">
+            <img id="movie-content" src="./images/pic1.jpg" alt="">
+        </div>
+ 
+        <!-- Subtitles -->
+        <div id="subs" class="subtitles"> Lorem ipsum dolor, 
+        </div>
+
+        <!-- Buttons -->
+        <div class="page-turn-container">
+            <img src="./images/leftPg.png" alt="previous" onclick="lastPage()">
+            <audio id="myAudio" class="audio-mixer" controls>
+                <source src="./audio/pg1.mp3" type="audio/mp3">
+                Your browser does not support the audio tag.
+            </audio>
+            <img src="./images/rightPg.png" alt="next" onclick="nextPage()">
+        </div>
+
+    </div>
+
+   
+    
+    <script src="./script.js"></script>
+</body>
+</html>
